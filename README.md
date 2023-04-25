@@ -39,3 +39,4 @@ This assumes that you are at a point where you have already installed NPM/NodeJS
 1. Avoid file/folder names with spaces or special characters (including æ, ø, and å)
 2. It is better to create many small Angular components with a limited, but well-defined responsibility. This both helps maintenance, testability, collaboration, debugging, and resuseability.
 3. Move code that is not related to showing stuff from components into services. This also helps separating concerns and increases maintenance, testability, collaboration, debugging, and reusability.
+4. Stop using `ng serve`. There are times when it can be useful to just watch changes in the web client, but it won't be able to contact your web server. A downside to `npm run watch` is that it doesn't live reload your browser. If you want this it is possible to make `ng serve` use your server as described here https://angular.io/guide/build#proxying-to-a-backend-server
