@@ -24,3 +24,8 @@ This assumes that you are at a point where you have already installed NPM/NodeJS
 | Command                  | Description                                                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------------------------------|
 | `npm install -g nodemon` | Installs nodemon globally so it can be used anywhere to start and watch for changes in NodeJS Applications. |
+
+# Guidelines
+1. Avoid file/folder names with spaces or special characters (including æ, ø, and å)
+2. It is better to create many small Angular components with a limited, but well-defined responsibility. This both helps maintenance, testability, collaboration, debugging, and resuseability.
+3. Move code that is not related to showing stuff from components into services. This also helps separating concerns and increases maintenance, testability, collaboration, debugging, and reusability.
